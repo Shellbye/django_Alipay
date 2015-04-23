@@ -7,11 +7,11 @@ DOMAIN = "http:127.0.0.1:8000"
 class Config():
     def __init__(self):
         #合作身份者ID，以2088开头由16位纯数字组成的字符串
-        self.partner = "2088911384703264"
+        self.partner = "2088xxxxxxxxxxxx"
         #交易安全检验码，由数字和字母组成的32位字符串
-        self.key = "cmlac85mu5qcjcqzh694jxgrk0akg64u"
+        self.key = "abcdefghijklmnopqrstuvwxyz123456"
         #签约支付宝账号或卖家支付宝帐户
-        self.seller_id = "2088911384703264"
+        self.seller_id = "2088xxxxxxxxxxxx"
         #页面跳转同步返回页面文件路径 要用 http://格式的完整路径，不允许加?id=123这类自定义参数
         self.return_url = DOMAIN + "/alipay/return/"
         #服务器通知的页面文件路径 要用 http://格式的完整路径，不允许加?id=123这类自定义参数
