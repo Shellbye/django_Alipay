@@ -18,8 +18,8 @@ class Core():
     @staticmethod
     def BuildMysign(paramDic, key, sign_type, input_charset):
         prestr = Core.CreateLinkString(paramDic)  # 把数组所有元素，按照“参数=参数值”的模式用“&”字符拼接成字符串
-        prestr = prestr + key                      # 把拼接后的字符串再与安全校验码直接连接起来
-        mysign = Core.Sign(prestr, sign_type, input_charset)    # 把最终的字符串签名，获得签名结果
+        prestr = prestr + key  # 把拼接后的字符串再与安全校验码直接连接起来
+        mysign = Core.Sign(prestr, sign_type, input_charset)  # 把最终的字符串签名，获得签名结果
         return mysign
 
     # <summary>
@@ -45,7 +45,7 @@ class Core():
     @staticmethod
     def CreateLinkString(paramDic):
         paramKeys = paramDic.keys()
-        #排序
+        # 排序
         paramKeys.sort()
         preList = []
         for key in paramKeys:

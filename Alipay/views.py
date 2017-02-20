@@ -51,4 +51,3 @@ def alipay_notify(request):
         return HttpResponse("success")
     else:
         return HttpResponse("fail")
-
